@@ -7,18 +7,17 @@ Build a dapp with solidity/go smart contracts, that does market making trades, u
 1. User A wants to buy 1 ETH for $400 from the pool.
 (in the same way that uniswap works)
 
-2. CHAD smart contracts borrows 1 ETH and $400 by minting CHAD tokens..
-CHAD creates $800 of CHAD tokens and sells to ETH/DAI pool, $400 to repay the ETH and $400 for the DAI.. 
+2. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to xDai holders (CHAD/xDai)..
+So the CHAD oracle is in $800 profit
 
+3. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
+Using an automated trading strategy called averaging up.. 
+(Selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440)
+Every sell; we buy back the CHAD token..
 
-User B buys the $800 of CHAD tokens for $800
+3.1 (Incase we never sell) The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
 
-CHAD then tries to sell his 1 ETH for $420 (a 5% profit).. 
-Using an automated trading strategy called averaging up.. (By market selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440)
-For each sell; we buy back the CHAD token..
-
-If the market doesn't sell and we are stuck with 1ETH
-Then we hold it until 
+3.2 The
 
 How will this strategy be profitable?:
 If we are in a bull market.. CHAD will gain value
