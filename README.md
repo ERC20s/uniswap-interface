@@ -12,7 +12,7 @@ So the CHAD oracle is in $800 profit
 
 3. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
 Using an automated trading strategy called averaging up.. 
-(Selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440)
+(Selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440).
 Every sell; we buy back the CHAD token..
 
 3.1 (Incase we never sell) The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
