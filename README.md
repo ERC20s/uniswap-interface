@@ -18,8 +18,10 @@ Every time we sell; we buy back the CHAD token..
 3.1 (Incase we never sell) The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
 
 4. How will this strategy be profitable?:
+
 4.1 If we are in a bull market.. CHAD will gain value
 If we are in a bear market.. CHAD will be minting a lot of CHAD and accumulating tokens
+
 4.2 The user pays the whole fee to the oracle for the 2ETH/800xDai..
 Even though he only bought 400xDai. So he pays double the fee.
 
