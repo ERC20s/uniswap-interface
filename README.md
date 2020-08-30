@@ -4,13 +4,14 @@ A uniswap like trading-bot DAPP on xDai sidechain..
 Build a dapp with solidity/go smart contracts, that does market making trades, using xDai (similar to ropsten).
 
 # Example trade:
-User A wants to buy 1 ETH for $400 from the pool.
+1. User A wants to buy 1 ETH for $400 from the pool.
 (in the same way that uniswap works)
-CHAD smart contracts borrows 1 ETH and $400 by minting CHAD tokens..
+
+2. CHAD smart contracts borrows 1 ETH and $400 by minting CHAD tokens..
 CHAD creates $800 of CHAD tokens and sells to ETH/DAI pool, $400 to repay the ETH and $400 for the DAI.. 
 
-[user]
-(User B buys the x amount of CHAD tokens for $400)
+
+User B buys the $800 of CHAD tokens for $800
 
 CHAD then tries to sell his 1 ETH for $420 (a 5% profit).. 
 Using an automated trading strategy called averaging up.. (By market selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440)
