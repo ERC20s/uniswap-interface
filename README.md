@@ -19,8 +19,10 @@ Every time we sell; we buy back the CHAD token..
 
 4. How will this strategy be profitable?:
 
-4.1 The user pays the whole fee to the oracle for the 2ETH/800xDai..
+4.1. The user pays the whole fee to the oracle for the 2ETH/800xDai..
 Even though he only bought 400xDai. So he pays double the fee.
+
+4.2. We make 5% profit on most of our trades due to market volatility.
 
 5. Bull market: CHAD will gain value.
 Bear market: CHAD will mint a lot of CHAD and accumulate tokens
