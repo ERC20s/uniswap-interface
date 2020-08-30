@@ -1,17 +1,19 @@
-[PROPOSAL:]
 # UniChad.com
 A uniswap like trading-bot DAPP on xDai sidechain..
 
 Build a dapp with solidity/go smart contracts, that does market making trades, using xDai (similar to ropsten).
 
-# Scenario:
-A pool has an average price of 2ETH to $800 (DAI) 
-(in the same way that uniswap works) 
-The (The users maintains a X*Y=P like 2*800=1600 and maybe there is 20ETH/$8000 in the pool..) etc.)
+# Example trade:
+[pool]
+The pool has 20ETH to $8000 (DAI) 
+(in the same way that uniswap works)
+If someone puts a trade for 2ETH and 800DAI. The pool wins fees.
+(The pool maintains a X*Y=P like 2*800=1600 etc.)
 User A wants to buy 1 ETH for $400 from the pool.
 CHAD smart contracts borrows 1 ETH and $400 by minting CHAD tokens..
 CHAD creates $800 of CHAD tokens and sells to ETH/DAI pool, $400 to repay the ETH and $400 for the DAI.. 
 
+[user]
 (User B buys the x amount of CHAD tokens for $400)
 
 CHAD then tries to sell his 1 ETH for $420 (a 5% profit).. 
@@ -35,7 +37,7 @@ The user pays half of the fee to CHAD..
 We charge the user 50% of the difference between buying 1ETH and buying 2ETH (the slippage is greater)..
 
 
-[WORK:]
+
 # Uniswap Interface
 
 [![Tests](https://github.com/Uniswap/uniswap-interface/workflows/Tests/badge.svg)](https://github.com/Uniswap/uniswap-interface/actions?query=workflow%3ATests)
