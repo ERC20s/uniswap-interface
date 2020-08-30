@@ -17,22 +17,14 @@ Every sell; we buy back the CHAD token..
 
 3.1 (Incase we never sell) The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
 
-3.2 The
-
-How will this strategy be profitable?:
-If we are in a bull market.. CHAD will gain value
+4. How will this strategy be profitable?:
+4.1 If we are in a bull market.. CHAD will gain value
 If we are in a bear market.. CHAD will be minting a lot of CHAD and accumulating tokens
-
-Users are rewarded in CHAD tokens for providing liquidity to our interface..
+4.2 The user pays the whole fee to the oracle for the 2ETH/800xDai..
+Even though he only bought 400xDai. So he pays double the fee.
 
 CHAD tokens works in a DAO
 Where the token holders vote to decide which contract address' to whitelist/blacklist for e.g. eth/xDai/MKR/etc
-
-So how does CHAD make money?
-The user pays half of the fee to CHAD..
-We charge the user 50% of the difference between buying 1ETH and buying 2ETH (the slippage is greater)..
-
-
 
 # Uniswap Interface
 
