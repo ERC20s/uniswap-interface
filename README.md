@@ -9,8 +9,8 @@ The price is determined by the pool size like uniswap (infura apis).
 The user receives the ETH and pays a small slippage fee to the pool.
 
 # Background work
-1. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to the xDai pool (CHAD/xDai).
-So the oracle trades $800 CHAD for $800 xDai then $400 xDai for 1ETH..
+1. CHAD smart contracts borrow 1 ETH and 400 xDai by minting CHAD and selling it to the xDai pool (CHAD/xDai).
+So the oracle mints $800 of CHAD to buy $800 xDai then trade $400 xDai for 1ETH..
 So the CHAD oracle is in $800 profit with 1ETH and $400 xDai.
 
 2. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
@@ -24,24 +24,23 @@ Whenever we sell 0.1ETH; we buy back the CHAD token..
 2. Bull market: CHAD will gain value.
 Bear market: CHAD is minted and accumulating tokens
 
-
 # Additional features
 
-1. The Chad Admin Address has ability to market sell everything in its address at the same time to buy CHAD. 
+1. The Chad Admin Address (CHADmin) has ability to market sell everything in its address at the same time to buy CHAD tokens. 
 
-2. CHAD smart contract can migrate liquidity from ETH mainnet by borrowing from the unichad pools.
-(So if someone wants to buy 1 ETH for $400 but the current price is 1ETH=$390 on the mainnet then we buy the 1 ETH for $390 DAI (If the gas is less than $10..))
+2. CHAD smart contracts can migrate liquidity from ETH mainnet by borrowing from the unichad pools.
+So if someone wants to buy 1 ETH for $400 but the current price is 1ETH=$390 on the mainnet then we buy the 1 ETH for $390 DAI (If the gas is less than $10..) and migrate it to the xDai chain
 
 3. CHAD tokens works in a DAO
-Where the token holders vote to decide which contract address' to whitelist/blacklist for e.g. eth/xDai/MKR/etc
+Where the token holders vote to decide which contract address' to whitelist/blacklist for trading e.g. eth/xDai/MKR/etc
 
 # Workflow
 
 1. Fork smart contracts from balancer.finance https://github.com/balancer-labs/balancer-exchange
 2. Deploy CHAD token with burn/mint functions.
 3. Add buy/sell functions as described.
-4. Import everything into unichad.com interface on xDai
-5. Migrating liquidity. https://github.com/balancer-labs/balancer-sor
+4. Import everything into unichad.com interface and link to xDai network
+5. Build the liquidity migration system. https://github.com/balancer-labs/balancer-sor
 
 
 # Uniswap Interface
