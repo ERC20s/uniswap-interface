@@ -5,7 +5,7 @@ Copying balancer's solidity/go smart contracts to do market making trades on the
 
 # Example trade:
 1. User A wants to buy 1 ETH for $400.
-The price is determined by the pool size like uniswap (infura apis).
+The price is determined by the pool size like uniswap (using infura apis).
 The user receives the ETH and pays a small slippage fee to the pool.
 
 # Background work
@@ -22,7 +22,7 @@ Whenever we sell 0.1ETH; we buy back the CHAD token..
 1. We make 5% profit on most of our trades due to market volatility.
 
 2. Bull market: CHAD will gain value.
-Bear market: CHAD is minted and accumulating tokens
+Bear market: CHAD is minted and accumulates tokens
 
 # Additional features
 
