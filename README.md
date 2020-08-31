@@ -8,9 +8,9 @@ Copying balancer's solidity/go smart contracts to do market making trades on the
 The price is determined by the pool size like balancer (using infura apis).
 The user receives the ETH and pays a small slippage fee to the pool.
 
-# Background work
+# In the background:
 1. CHAD smart contracts borrow 1 ETH and 400 xDai by minting CHAD and selling it to the xDai pool (CHAD/xDai).
-So the oracle mints $800 of CHAD to buy $800 xDai then trade $400 xDai for 1ETH..
+So the oracle mints $800 of CHAD to buy $800 xDai then buys 1 ETH for $400 xDai..
 So the CHAD oracle is in $800 profit with 1ETH and $400 xDai.
 
 2. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
