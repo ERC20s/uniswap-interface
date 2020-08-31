@@ -1,5 +1,5 @@
 # UniChad.com
-A balancer.finance style AMM (automated market making) DAPP on xDai sidechain..
+A balancer.finance style AMM (automated market maker) DAPP on xDai sidechain..
 
 Build a dapp by copying balancer solidity/go smart contracts, that does market making trades on the xDai network (similar to ropsten).
 
