@@ -1,17 +1,19 @@
 # UniChad.com
 A balancer.finance style AMM (automated market maker) DAPP on xDai sidechain..
 
-Build a dapp by copying balancer solidity/go smart contracts, that does market making trades on the xDai network (similar to ropsten).
+Copying balancer's solidity/go smart contracts to do market making trades on the xDai network (similar to ropsten).
 
 # Example trade:
-1. User A wants to buy 1 ETH for $400 from the pool.
-(in the same way that uniswap/balancer works)
+1. User A wants to buy 1 ETH for $400.
+The price is determined by the pool size like uniswap (infura apis).
+The user receives the ETH and pays a small slippage fee to the pool.
 
-2. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to the xDai pool (CHAD/xDai).
+# Background work
+1. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to the xDai pool (CHAD/xDai).
 So the oracle trades $800 CHAD for $800 xDai then $400 xDai for 1ETH..
-So the CHAD oracle is in $800 profit
+So the CHAD oracle is in $800 profit with 1ETH and $400 xDai.
 
-3. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
+2. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
 Selling 0.1ETH at $404 and Increasing 1% until 0.1ETH for $440.
 This is known as market making.
 Whenever we sell 0.1ETH; we buy back the CHAD token..
@@ -20,14 +22,15 @@ Whenever we sell 0.1ETH; we buy back the CHAD token..
 1. We make 5% profit on most of our trades due to market volatility.
 
 2. Bull market: CHAD will gain value.
-Bear market: CHAD will mint a lot of CHAD and accumulate tokens
+Bear market: CHAD is minted and accumulating tokens
 
 
 # Additional features
 
-1. The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
+1. The Chad Admin Address has ability to market sell everything in its address at the same time to buy CHAD. 
 
-2. CHAD smart contract can borrow from the pool to migrate liquidity from uniswap to unichad?
+2. CHAD smart contract can migrate liquidity from ETH mainnet by borrowing from the unichad pools.
+(So if someone wants to buy 1 ETH for $400 but the current price is 1ETH=$390 on the mainnet then we buy the 1 ETH for $390 DAI (If the gas is less than $10..))
 
 3. CHAD tokens works in a DAO
 Where the token holders vote to decide which contract address' to whitelist/blacklist for e.g. eth/xDai/MKR/etc
@@ -38,7 +41,7 @@ Where the token holders vote to decide which contract address' to whitelist/blac
 2. Deploy CHAD token with burn/mint functions.
 3. Add buy/sell functions as described.
 4. Import everything into unichad.com interface on xDai
-5. Migrate liquidity. https://github.com/balancer-labs/balancer-sor
+5. Migrating liquidity. https://github.com/balancer-labs/balancer-sor
 
 
 # Uniswap Interface
