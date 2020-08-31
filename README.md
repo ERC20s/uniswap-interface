@@ -5,7 +5,7 @@ Copying balancer's solidity/go smart contracts to do market making trades on the
 
 # Example trade:
 1. User A wants to buy 1 ETH for $400.
-The price is determined by the pool size like uniswap (using infura apis).
+The price is determined by the pool size like balancer (using infura apis).
 The user receives the ETH and pays a small slippage fee to the pool.
 
 # Background work
