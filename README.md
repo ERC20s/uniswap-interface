@@ -1,34 +1,45 @@
 # UniChad.com
-A uniswap like trading-bot DAPP on xDai sidechain..
+A balancer.finance style AMM (automated market making) DAPP on xDai sidechain..
 
-Build a dapp with solidity/go smart contracts, that does market making trades, using xDai (similar to ropsten).
+Build a dapp by copying balancer solidity/go smart contracts, that does market making trades on the xDai network (similar to ropsten).
 
 # Example trade:
 1. User A wants to buy 1 ETH for $400 from the pool.
-(in the same way that uniswap works)
+(in the same way that uniswap/balancer works)
 
-2. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to xDai holders (CHAD/xDai)..
+2. CHAD smart contracts borrow 1 ETH and $400 by minting CHAD and selling it to the xDai pool (CHAD/xDai).
+So the oracle trades $800 CHAD for $800 xDai then $400 xDai for 1ETH..
 So the CHAD oracle is in $800 profit
 
 3. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
-Using an automated trading strategy called averaging up.. 
-(Selling 0.1ETH at $404)Increasing 1% until(0.1ETH for $440).
-Every time we sell; we buy back the CHAD token..
+Selling 0.1ETH at $404 and Increasing 1% until 0.1ETH for $440.
+This is known as market making.
+Whenever we sell 0.1ETH; we buy back the CHAD token..
 
-3.1 (Incase we never sell) The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
+# Conclusion
+1. We make 5% profit on most of our trades due to market volatility.
 
-4. How will this strategy be profitable?:
-
-4.1. The user pays the whole fee to the oracle for the 2ETH/800xDai..
-Even though he only bought 400xDai. So he pays double the fee.
-
-4.2. We make 5% profit on most of our trades due to market volatility.
-
-5. Bull market: CHAD will gain value.
+2. Bull market: CHAD will gain value.
 Bear market: CHAD will mint a lot of CHAD and accumulate tokens
 
-CHAD tokens works in a DAO
+
+# Additional features
+
+1. The Chad Admin Address has ability to market sell everything in its address to buy CHAD. 
+
+2. CHAD smart contract can borrow from the pool to migrate liquidity from uniswap to unichad?
+
+3. CHAD tokens works in a DAO
 Where the token holders vote to decide which contract address' to whitelist/blacklist for e.g. eth/xDai/MKR/etc
+
+# Workflow
+
+1. Fork smart contracts from balancer.finance https://github.com/balancer-labs/balancer-exchange
+2. Deploy CHAD token with burn/mint functions.
+3. Add buy/sell functions as described.
+4. Import everything into unichad.com interface on xDai
+5. Migrate liquidity. https://github.com/balancer-labs/balancer-sor
+
 
 # Uniswap Interface
 
