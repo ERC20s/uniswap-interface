@@ -31,8 +31,9 @@ Bear market: CHAD is minted and accumulates tokens
 2. CHAD smart contracts can migrate liquidity from ETH mainnet by borrowing from the unichad pools.
 So if someone wants to buy 1 ETH for $400 but the current price is 1ETH=$390 on the mainnet then we buy the 1 ETH for $390 DAI (If the gas is less than $10..) and migrate it to the xDai chain
 
-3. CHAD tokens works in a DAO
-Where the token holders vote to decide which contract address' to whitelist/blacklist for trading e.g. eth/xDai/MKR/etc
+3. CHAD tokens works as a DAO
+Where the token holders vote to decide which contract address' to whitelist/blacklist for trading e.g. eth/xDai/MKR/etc.
+They can also vote on the market making profit percentage (5%)
 
 # Workflow
 
