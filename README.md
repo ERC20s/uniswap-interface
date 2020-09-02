@@ -44,8 +44,8 @@ They can also vote on the market making profit percentage (5%)
 5. Build the liquidity migration system. https://github.com/balancer-labs/balancer-sor
 
 Hope this is clear to understand.
-Thanks
 
+--------------------------End of proposal-------------------------
 
 # UNICHAD UI
 
