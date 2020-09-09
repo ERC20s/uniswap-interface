@@ -45,10 +45,11 @@ https://www.xdaichain.com/for-developers/developer-resources/api-and-sql-access
 
 # Backend workflow
 
-1. Build contract on the mainchain that can interact with the sidechain to check if liquidity is available.
-2. with DEXs to buy/sell tokens. (Forking something like Unitrade to make limit trades is a good option)
-2. Add buy/sell functions as described.
-2. Deploy CHAD token with burn/mint functions.
+1. Build DEX with .sol contracts.
+2. Create CHAD token with burn/mint functions.
+3. Create a market maker that can mint and burn CHAD tokens to sell to xDai pool
+4. Allowing the oracle to sell tokens with limit orders to make a 5% profit per trade
+5. Find a way to migrate liquidity from uniswap/balancer
 
 5. Build the liquidity migration system. https://github.com/balancer-labs/balancer-sor
 
