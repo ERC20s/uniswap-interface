@@ -13,7 +13,7 @@ The user receives the ETH and pays a small slippage fee to the pool.
 So the oracle mints $800 of CHAD to buy $800 xDai then buys 1 ETH for $400 xDai..
 So the CHAD oracle is in $800 profit with 1ETH and $400 xDai.
 
-2. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit.. 
+2. CHAD oracle then places 'limit orders' to sell the XDAI/ETH at a 5% profit..
 Selling 0.1ETH at $404 and Increasing 1% until 0.1ETH for $440.
 This is known as market making.
 Whenever we sell 0.1ETH; we buy back the CHAD token..
@@ -26,7 +26,7 @@ Bear market: CHAD is minted and accumulates tokens
 
 # Additional features
 
-1. The Chad Admin Address (CHADmin) has ability to market sell everything in its address at the same time to buy CHAD tokens. 
+1. The Chad Admin Address (CHADmin) has ability to market sell everything in its address at the same time to buy CHAD tokens.
 
 2. CHAD smart contracts can migrate liquidity from ETH mainnet by borrowing from the unichad pools.
 So if someone wants to buy 1 ETH for $400 but the current price is 1ETH=$390 on the mainnet then we buy the 1 ETH for $390 DAI (If the gas is less than $10..) and migrate it to the xDai chain
@@ -40,18 +40,20 @@ They can also vote on the market making profit percentage (5%)
 1. Fork uniswap v1/v2 and change the UI
 2. connect to xDai network AND mainchain network.
 https://www.xdaichain.com/for-developers/stable-chain-network-deployment
-3. Use APIs to determine the swap rates. 
+3. Use APIs to determine the swap rates.
 https://www.xdaichain.com/for-developers/developer-resources/api-and-sql-access
 
 # Backend workflow
 
-1. Build DEX with .sol contracts.
+1. Build DEX with .sol contracts with similar pooling system as uniswap
 2. Create CHAD token with burn/mint functions.
-3. Create a market maker that can mint and burn CHAD tokens to sell to xDai pool
-4. Allowing the oracle to sell tokens with limit orders to make a 5% profit per trade
-5. Find a way to migrate liquidity from uniswap/balancer
+3. Allow CHADmin to buy/sell CHAD to xDai pool to spend xDai on other tokens
+4. Create a limit order system to sell tokens at a 5% profit
+5. Create balancer system that
+5. Sell excess liquidity to uniswap/balancer
+6. Allow CHADmin creator address to sell all tokens in the admin address to buy CHAD
 
-5. Build the liquidity migration system. https://github.com/balancer-labs/balancer-sor
+ https://github.com/balancer-labs/balancer-sor
 
 Hope this is clear to understand.
 
@@ -76,13 +78,13 @@ An open source interface for Uniswap -- a protocol for decentralized exchange of
 ## Accessing the Uniswap Interface
 
 To access the Uniswap Interface, use an IPFS gateway link from the
-[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest), 
+[latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
 or visit [app.uniswap.org](https://app.uniswap.org).
 
 ## Listing a token
 
 Please see the
-[@uniswap/default-token-list](https://github.com/uniswap/default-token-list) 
+[@uniswap/default-token-list](https://github.com/uniswap/default-token-list)
 repository.
 
 ## Development
@@ -105,20 +107,20 @@ To have the interface default to a different network when a wallet is not connec
 
 1. Make a copy of `.env` named `.env.local`
 2. Change `REACT_APP_NETWORK_ID` to `"{YOUR_NETWORK_ID}"`
-3. Change `REACT_APP_NETWORK_URL` to e.g. `"https://{YOUR_NETWORK_ID}.infura.io/v3/{YOUR_INFURA_KEY}"` 
+3. Change `REACT_APP_NETWORK_URL` to e.g. `"https://{YOUR_NETWORK_ID}.infura.io/v3/{YOUR_INFURA_KEY}"`
 
-Note that the interface only works on testnets where both 
-[Uniswap V2](https://uniswap.org/docs/v2/smart-contracts/factory/) and 
+Note that the interface only works on testnets where both
+[Uniswap V2](https://uniswap.org/docs/v2/smart-contracts/factory/) and
 [multicall](https://github.com/makerdao/multicall) are deployed.
 The interface will not work on other networks.
 
 ## Contributions
 
-**Please open all pull requests against the `master` branch.** 
+**Please open all pull requests against the `master` branch.**
 CI checks will run against all PRs.
 
 ## Accessing Uniswap Interface V1
 
 The Uniswap Interface supports swapping against, and migrating or removing liquidity from Uniswap V1. However,
-if you would like to use Uniswap V1, the Uniswap V1 interface for mainnet and testnets is accessible via IPFS gateways 
+if you would like to use Uniswap V1, the Uniswap V1 interface for mainnet and testnets is accessible via IPFS gateways
 linked from the [v1.0.0 release](https://github.com/Uniswap/uniswap-interface/releases/tag/v1.0.0).
